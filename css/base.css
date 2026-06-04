@@ -2,17 +2,19 @@ body {
     font-family: var(--font-body);
     color: var(--color-text);
     background-color: var(--color-bg);
+    line-height: 1.7; /* Better readability */
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-weight: 700;
     line-height: 1.2;
+    color: var(--color-primary);
 }
 
-h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
-h2 { font-size: clamp(2rem, 4vw, 3rem); }
-h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
+h1 { font-size: clamp(2.25rem, 6vw, 4.5rem); }
+h2 { font-size: clamp(1.75rem, 4vw, 3rem); }
+h3 { font-size: clamp(1.25rem, 3vw, 2rem); }
 
 .container {
     max-width: var(--container-max-width);
@@ -24,10 +26,9 @@ h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
     padding: var(--spacing-lg) 0;
 }
 
-@media (min-width: 768px) {
-    .section {
-        padding: var(--spacing-xl) 0;
-    }
+/* Vertical rhythm utility */
+.stack > * + * {
+    margin-top: var(--spacing-sm);
 }
 
 .text-center { text-align: center; }
