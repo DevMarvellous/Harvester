@@ -1,38 +1,43 @@
 :root {
-    /* Colors */
+    /* Colors - More vibrant and premium */
     --color-primary: #0B6B3A;
-    --color-primary-rgb: 11, 107, 58;
+    --color-primary-dark: #084d2a;
+    --color-primary-light: #128a4c;
     --color-gold: #D4AF37;
-    --color-gold-rgb: 212, 175, 55;
+    --color-gold-light: #e6c65d;
+    --color-gold-dark: #a68a2b;
     --color-bg: #FFFFFF;
-    --color-bg-secondary: #F8F6EF;
+    --color-bg-secondary: #FBF9F3; /* Warmer cream */
     --color-text: #1A1A1A;
-    --color-text-light: #666666;
-    --color-gray-light: #F5F5F5;
+    --color-text-light: #555555;
     --color-white: #FFFFFF;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    --gradient-gold: linear-gradient(135deg, var(--color-gold), var(--color-gold-dark));
+    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
 
     /* Typography */
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Poppins', sans-serif;
 
-    /* Spacing */
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 2rem;
-    --spacing-lg: 4rem;
-    --spacing-xl: 8rem;
+    /* Spacing - More generous */
+    --spacing-xs: 0.75rem;
+    --spacing-sm: 1.5rem;
+    --spacing-md: 3rem;
+    --spacing-lg: 6rem;
+    --spacing-xl: 10rem;
 
-    /* Transitions */
-    --transition-slow: 0.5s ease;
-    --transition-base: 0.3s ease;
+    /* Transitions - Refined */
+    --transition-slow: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    --transition-base: 0.4s cubic-bezier(0.22, 1, 0.36, 1);
     --transition-fast: 0.2s ease;
 
-    /* Container */
-    --container-max-width: 1280px;
-    --container-padding: 2rem;
-
-    /* Shadows */
-    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    /* Effects */
+    --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.03);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.12);
+    --radius-sm: 4px;
+    --radius-md: 12px;
+    --radius-lg: 24px;
 }
