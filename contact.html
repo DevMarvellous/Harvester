@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find Harvester Church in Rainham. Get directions, contact details, and send us a message.">
+    <title>Contact Us | Harvester Church</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav" role="navigation" aria-label="Main Navigation">
+                <a href="index.html" class="nav__logo">HARVESTER</a>
+                
+                <ul class="nav__list" id="nav-list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li><a href="about.html" class="nav__link">About Us</a></li>
+                    <li><a href="testimonies.html" class="nav__link">Testimonies</a></li>
+                    <li><a href="enquiries.html" class="nav__link">Enquiries</a></li>
+                    <li><a href="contact.html" class="nav__link nav__link--active">Contact</a></li>
+                </ul>
+                
+                <button class="nav__toggle" id="nav-toggle" aria-label="Toggle Menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="section bg-primary text-center">
+            <div class="container">
+                <h1 class="text-white animate-fade">Contact Us</h1>
+                <p class="text-white animate-fade" style="opacity: 0.8;">We're here to listen and serve.</p>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid--2-col">
+                    <div class="contact-info reveal">
+                        <h2 class="section__title">Get In Touch</h2>
+                        <p style="margin-bottom: var(--spacing-md);">Whether you have a question about our services, need prayer, or want to learn more about our community, we're just a message away.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail" style="margin-bottom: 2rem;">
+                                <i class="fas fa-location-dot" style="font-size: 1.5rem;"></i>
+                                <div>
+                                    <h3 style="font-size: 1.25rem;">Our Address</h3>
+                                    <p>Mainly Hall, Harris Academy, Rainham, RM13 9UU</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail" style="margin-bottom: 2rem;">
+                                <i class="fas fa-phone" style="font-size: 1.5rem;"></i>
+                                <div>
+                                    <h3 style="font-size: 1.25rem;">Call Us</h3>
+                                    <p>+44 000 000 000</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail" style="margin-bottom: 2rem;">
+                                <i class="fas fa-envelope" style="font-size: 1.5rem;"></i>
+                                <div>
+                                    <h3 style="font-size: 1.25rem;">Email Us</h3>
+                                    <p>info@harvesterchurch.org</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links" style="display: flex; gap: 1rem; margin-top: 2rem;">
+                            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container reveal">
+                        <div class="card">
+                            <form id="contact-form" class="form">
+                                <div class="form__group">
+                                    <label for="name" class="form__label">Name</label>
+                                    <input type="text" id="name" name="name" class="form__input" placeholder="Your Name" required>
+                                </div>
+                                <div class="form__group">
+                                    <label for="email" class="form__label">Email</label>
+                                    <input type="email" id="email" name="email" class="form__input" placeholder="Your Email" required>
+                                    <span class="form__error" id="email-error"></span>
+                                </div>
+                                <div class="form__group">
+                                    <label for="message" class="form__label">Message</label>
+                                    <textarea id="message" name="message" class="form__input" rows="5" placeholder="How can we help?" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                                <div id="form-message" class="form__message"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="section no-padding reveal">
+            <div class="map-placeholder" style="width: 100%; height: 450px; background: #eee; display: flex; align-items: center; justify-content: center;">
+                <div class="text-center">
+                    <i class="fas fa-map-location-dot" style="font-size: 3rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+                    <p>Google Maps Interactive Integration</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer bg-secondary">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <h3 class="footer__title nav__logo">HARVESTER</h3>
+                    <p>A place where faith grows, lives are transformed, and Christ is glorified.</p>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="about.html" class="footer__link">Our Story</a></li>
+                        <li><a href="testimonies.html" class="footer__link">Testimonies</a></li>
+                        <li><a href="contact.html" class="footer__link">Plan Your Visit</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Contact Us</h4>
+                    <p><i class="fas fa-location-dot"></i> Mainly Hall, Harris Academy, Rainham, RM13 9UU</p>
+                    <p><i class="fas fa-phone"></i> +44 000 000 000</p>
+                    <p><i class="fas fa-envelope"></i> info@harvesterchurch.org</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Harvester Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+</body>
+</html>

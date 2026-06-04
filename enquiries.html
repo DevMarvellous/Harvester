@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Harvester Church for any enquiries, prayer requests, or information.">
+    <title>Enquiries | Harvester Church</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav" role="navigation" aria-label="Main Navigation">
+                <a href="index.html" class="nav__logo">HARVESTER</a>
+                
+                <ul class="nav__list" id="nav-list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li><a href="about.html" class="nav__link">About Us</a></li>
+                    <li><a href="testimonies.html" class="nav__link">Testimonies</a></li>
+                    <li><a href="enquiries.html" class="nav__link nav__link--active">Enquiries</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+                
+                <button class="nav__toggle" id="nav-toggle" aria-label="Toggle Menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="section bg-primary text-center">
+            <div class="container">
+                <h1 class="text-white animate-fade">Enquiries</h1>
+                <p class="text-white animate-fade" style="opacity: 0.8;">How can we help you today?</p>
+            </div>
+        </section>
+
+        <!-- Enquiry Form Section -->
+        <section class="section">
+            <div class="container">
+                <div class="form-container reveal">
+                    <form id="enquiry-form" class="form">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form__input" placeholder="Your full name" required>
+                            <span class="form__error" id="name-error"></span>
+                        </div>
+
+                        <div class="grid grid--2-col">
+                            <div class="form__group">
+                                <label for="email" class="form__label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form__input" placeholder="your.email@example.com" required>
+                                <span class="form__error" id="email-error"></span>
+                            </div>
+                            <div class="form__group">
+                                <label for="phone" class="form__label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form__input" placeholder="Your phone number">
+                            </div>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="subject" class="form__label">Subject</label>
+                            <select id="subject" name="subject" class="form__input" required>
+                                <option value="" disabled selected>Select a subject</option>
+                                <option value="general">General Enquiry</option>
+                                <option value="prayer">Prayer Request</option>
+                                <option value="testimony">Sharing a Testimony</option>
+                                <option value="visit">Planning a Visit</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="message" class="form__label">Your Message</label>
+                            <textarea id="message" name="message" class="form__input" rows="6" placeholder="How can we assist you?" required></textarea>
+                            <span class="form__error" id="message-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full">Send Enquiry</button>
+                        
+                        <div id="form-message" class="form__message"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer bg-secondary">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <h3 class="footer__title nav__logo">HARVESTER</h3>
+                    <p>A place where faith grows, lives are transformed, and Christ is glorified.</p>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="about.html" class="footer__link">Our Story</a></li>
+                        <li><a href="testimonies.html" class="footer__link">Testimonies</a></li>
+                        <li><a href="contact.html" class="footer__link">Plan Your Visit</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Contact Us</h4>
+                    <p><i class="fas fa-location-dot"></i> Mainly Hall, Harris Academy, Rainham, RM13 9UU</p>
+                    <p><i class="fas fa-phone"></i> +44 000 000 000</p>
+                    <p><i class="fas fa-envelope"></i> info@harvesterchurch.org</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Harvester Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+</body>
+</html>

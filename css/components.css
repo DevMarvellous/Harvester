@@ -1,0 +1,264 @@
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-family: var(--font-body);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: var(--transition-base);
+    text-align: center;
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn--primary:hover {
+    background-color: #085a30;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn--gold {
+    background-color: var(--color-gold);
+    color: var(--color-white);
+}
+
+.btn--gold:hover {
+    background-color: #b8952d;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn--outline {
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn--outline:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transform: translateY(-2px);
+}
+
+/* Cards */
+.card {
+    background: var(--color-white);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Service Card */
+.service-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.service-card__icon {
+    font-size: 2.5rem;
+    color: var(--color-gold);
+    margin-bottom: var(--spacing-xs);
+}
+
+.service-card__title {
+    font-size: 1.5rem;
+}
+
+.service-card__time {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.service-card__desc {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+}
+
+/* Testimonies */
+.testimonies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.testimony-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--spacing-lg);
+}
+
+.testimony-card__quote {
+    font-size: 2rem;
+    color: var(--color-gold);
+    margin-bottom: var(--spacing-sm);
+    opacity: 0.5;
+}
+
+.testimony-card__text {
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+}
+
+.testimony-card__author {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+/* Event Card */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.event-card__date {
+    background: var(--color-gold);
+    color: var(--color-white);
+    padding: 0.25rem 0.75rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.event-card__title {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.event-card__info {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+}
+
+.event-card__info i {
+    color: var(--color-primary);
+    margin-right: 5px;
+}
+
+/* Value Item */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.value-item {
+    text-align: center;
+}
+
+.value-item__number {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: rgba(11, 107, 58, 0.1);
+    margin-bottom: -1.5rem;
+    font-weight: 700;
+}
+
+.value-item h3 {
+    margin-bottom: var(--spacing-xs);
+    position: relative;
+    z-index: 1;
+}
+
+.value-item p {
+    color: var(--color-text-light);
+}
+
+/* Leadership Card */
+.leadership-card {
+    text-align: center;
+}
+
+.leadership-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+/* Forms */
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form__label {
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+.form__input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: var(--color-gray-light);
+    transition: var(--transition-base);
+}
+
+.form__input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    background-color: var(--color-white);
+    box-shadow: 0 0 0 3px rgba(11, 107, 58, 0.1);
+}
+
+.form__error {
+    color: #d32f2f;
+    font-size: 0.8rem;
+    height: 1rem;
+}
+
+.form__message {
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    display: none;
+}
+
+.form__message--success {
+    display: block;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+.btn--full {
+    width: 100%;
+}
