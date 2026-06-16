@@ -108,39 +108,6 @@
     font-size: 0.9rem;
 }
 
-/* Testimonies */
-.testimonies-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-md);
-}
-
-.testimony-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: var(--spacing-lg);
-}
-
-.testimony-card__quote {
-    font-size: 2rem;
-    color: var(--color-gold);
-    margin-bottom: var(--spacing-sm);
-    opacity: 0.5;
-}
-
-.testimony-card__text {
-    font-style: italic;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: var(--spacing-md);
-}
-
-.testimony-card__author {
-    font-weight: 600;
-    color: var(--color-primary);
-}
-
 /* Event Card */
 .events-grid {
     display: grid;
