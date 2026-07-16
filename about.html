@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about The Harvester - Our story, vision, mission, and the leadership team dedicated to serving our community.">
+    <meta name="description"
+        content="Learn about The Harvester - Our story, vision, mission, and the leadership team dedicated to serving our community.">
     <title>About Us | The Harvester</title>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -18,10 +22,11 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/animations.css">
-    
+
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -29,15 +34,15 @@
                 <a href="index.html" class="nav__logo">
                     <img src="assets/images/logo.png" alt="The Harvester logo" class="nav__logo-img">
                 </a>
-                
+
                 <ul class="nav__list" id="nav-list">
                     <li><a href="index.html" class="nav__link">Home</a></li>
                     <li><a href="about.html" class="nav__link nav__link--active">About Us</a></li>
                     <li><a href="strategy.html" class="nav__link">Ministry Model</a></li>
-                    <li><a href="enquiries.html" class="nav__link">Enquiries</a></li>
                     <li><a href="contact.html" class="nav__link">Contact</a></li>
+                    <li><a href="enquiries.html" class="nav__link">Enquiries</a></li>
                 </ul>
-                
+
                 <button class="nav__toggle" id="nav-toggle" aria-label="Toggle Menu" aria-expanded="false">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -46,103 +51,54 @@
     </header>
 
     <main>
-        <!-- Page Header -->
-        <section class="section bg-primary text-center">
-            <div class="container">
-                <h1 class="text-white animate-fade">About Us</h1>
-                <p class="text-white animate-fade" style="opacity: 0.8;">Our Story, Our Vision, and Our Heart for People.</p>
-            </div>
-        </section>
 
         <!-- Our Story -->
         <section class="section story">
             <div class="container story__container">
                 <div class="story__image reveal">
-                    <div style="background: #ddd; aspect-ratio: 4/5; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                        <span>[Founder/History Image]</span>
+                    <div class="media-frame media-frame--portrait">
+                        <span class="media-frame__mark">
+                            <span class="media-frame__monogram">TH</span>
+                            <span class="media-frame__label">Our Story since 2010</span>
+                        </span>
                     </div>
                 </div>
                 <div class="story__content reveal">
                     <h2 class="section__title">Our Story</h2>
-                    <p>Founded in 2010, The Harvester began as a small group of believers meeting in a living room with a shared passion for seeing lives transformed by the Gospel of Jesus Christ.</p>
-                    <p>Over the years, we have grown into a diverse and vibrant community, but our core mission remains the same: to love God, love people, and make disciples.</p>
-                    <p>Today, we continue to serve the Rainham community and beyond, striving to be a beacon of hope and a place where everyone can find a sense of belonging.</p>
+                    <p>Founded in 2010, The Harvester began as a small group of believers meeting in a living room with
+                        a shared passion for seeing lives transformed by the Gospel of Jesus Christ.</p>
+                    <p>Over the years, we have grown into a diverse and vibrant community, but our core mission remains
+                        the same: to love God, love people, and make disciples.</p>
+                    <p>Today, we continue to serve the Rainham community and beyond, striving to be a beacon of hope and
+                        a place where everyone can find a sense of belonging.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Vision & Mission -->
-        <section class="section bg-secondary">
-            <div class="container">
-                <div class="grid grid--2-col">
-                    <div class="card reveal">
-                        <h3 class="text-primary"><i class="fas fa-eye"></i> Our Vision</h3>
-                        <p>To see a world where every person experiences the life-changing love of Christ and fulfills their God-given purpose.</p>
-                    </div>
-                    <div class="card reveal">
-                        <h3 class="text-primary"><i class="fas fa-bullseye"></i> Our Mission</h3>
-                        <p>To create a welcoming environment where people can encounter God, grow in faith, and be equipped to serve others.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Core Values -->
-        <section class="section values">
-            <div class="container">
-                <div class="section__header text-center reveal">
-                    <h2 class="section__title">Our Core Values</h2>
-                    <p class="section__subtitle">The principles that guide everything we do.</p>
-                </div>
-                
-                <div class="values-grid">
-                    <div class="value-item reveal">
-                        <div class="value-item__number">01</div>
-                        <h3>Faithfulness</h3>
-                        <p>Staying true to God's Word and His calling in all we do.</p>
-                    </div>
-                    <div class="value-item reveal">
-                        <div class="value-item__number">02</div>
-                        <h3>Community</h3>
-                        <p>Building meaningful relationships and supporting one another.</p>
-                    </div>
-                    <div class="value-item reveal">
-                        <div class="value-item__number">03</div>
-                        <h3>Excellence</h3>
-                        <p>Giving our best in every aspect of our ministry.</p>
-                    </div>
-                    <div class="value-item reveal">
-                        <div class="value-item__number">04</div>
-                        <h3>Service</h3>
-                        <p>Actively demonstrating Christ's love through practical help.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Leadership Team -->
         <section class="section bg-secondary">
             <div class="container">
                 <div class="section__header text-center reveal">
+                    <span class="eyebrow eyebrow--center">Our shepherds</span>
                     <h2 class="section__title">Leadership Team</h2>
                     <p class="section__subtitle">The hearts behind the vision.</p>
                 </div>
-                
+
                 <div class="leadership-grid">
                     <div class="card leadership-card reveal">
-                        <div class="leadership-card__image" style="background: #eee; height: 250px; border-radius: 4px; margin-bottom: 1rem;"></div>
+                        <div class="media-frame media-frame--headshot leadership-card__image">
+                            <span class="media-frame__monogram">YA</span>
+                        </div>
                         <h3>Pastor Yemi Akinjagunla</h3>
                         <p class="text-gold">Senior Pastor</p>
                     </div>
                     <div class="card leadership-card reveal">
-                        <div class="leadership-card__image" style="background: #eee; height: 250px; border-radius: 4px; margin-bottom: 1rem;"></div>
-                        <h3>Pastor Mrs. Dora Akinjagunla</h3>
+                        <div class="media-frame media-frame--headshot leadership-card__image">
+                            <span class="media-frame__monogram">DA</span>
+                        </div>
+                        <h3>Prophetess Mrs. Dora Akinjagunla</h3>
                         <p class="text-gold">Co-Pastor</p>
-                    </div>
-                    <div class="card leadership-card reveal">
-                        <div class="leadership-card__image" style="background: #eee; height: 250px; border-radius: 4px; margin-bottom: 1rem;"></div>
-                        <h3>Elder Michael Smith</h3>
-                        <p class="text-gold">Executive Pastor</p>
                     </div>
                 </div>
             </div>
@@ -155,17 +111,25 @@
                 <div class="footer__col">
                     <h3 class="footer__title nav__logo">THE HARVESTER</h3>
                     <p>A place where faith grows, lives are transformed, and Christ is glorified.</p>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/The%20Harvester" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/theharvesterministry3" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/theharvesterminisry5309" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
                 <div class="footer__col">
                     <h4 class="footer__title">Quick Links</h4>
                     <ul class="footer__links">
                         <li><a href="about.html" class="footer__link">Our Story</a></li>
+                        <li><a href="strategy.html" class="footer__link">Ministry Model</a></li>
                         <li><a href="contact.html" class="footer__link">Visit Us</a></li>
+                        <li><a href="enquiries.html" class="footer__link">Enquiries</a></li>
                     </ul>
                 </div>
                 <div class="footer__col">
                     <h4 class="footer__title">Contact Us</h4>
-                    <p><i class="fas fa-location-dot"></i> Mainly Hall, Harris Academy, Rainham, London, RM13 9UU, United Kingdom</p>
+                    <p><i class="fas fa-location-dot"></i> Mainly Hall, Harris Academy, Rainham, London, RM13 9UU,
+                        United Kingdom</p>
                     <p><i class="fas fa-phone"></i> +44 7722 523856</p>
                     <p><i class="fas fa-envelope"></i> info@theharvesterchurch.org</p>
                 </div>
@@ -178,9 +142,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
-
-
-
-
-

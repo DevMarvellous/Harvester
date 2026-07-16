@@ -1,25 +1,34 @@
 :root {
-    /* Colors - Maintaining premium palette */
-    --color-primary: #0B6B3A;
+    /* Colors - "Golden Hour over the Field" palette */
+    --color-primary: #0B6B3A;          /* Field - primary brand green */
     --color-primary-dark: #084d2a;
-    --color-primary-light: #128a4c;
-    --color-gold: #D4AF37;
+    --color-primary-light: #128a4c;    /* Sprout */
+    --color-canopy: #063D22;           /* deep green for hero + dark bands */
+    --color-canopy-deep: #042A17;      /* deepest green, top of the hero sky */
+    --color-gold: #D4AF37;             /* Harvest Gold - accent / decor */
     --color-gold-light: #e6c65d;
     --color-gold-dark: #a68a2b;
+    --color-gold-ink: #8A6D1F;         /* Burnished - accessible gold for text on light */
     --color-bg: #FFFFFF;
-    --color-bg-secondary: #FBF9F3;
-    --color-text: #1A1A1A;
-    --color-text-light: #555555;
+    --color-bg-secondary: #F7F2E7;     /* Wheat Ivory - warm field light */
+    --color-text: #1B2019;             /* warm Ink (subtle green undertone) */
+    --color-text-light: #5A5F55;       /* muted warm grey-green */
     --color-white: #FFFFFF;
-    
+    --color-gray-light: #EFEADD;       /* soft warm surface (form inputs) */
+    --color-line: rgba(11, 55, 34, 0.10); /* hairline on light */
+
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
-    --gradient-gold: linear-gradient(135deg, var(--color-gold), var(--color-gold-dark));
+    --gradient-gold: linear-gradient(135deg, var(--color-gold-light), var(--color-gold-dark));
     --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+    /* Signature hero ground: canopy sky with a golden-hour light-well rising from the field */
+    --gradient-canopy: linear-gradient(170deg, var(--color-canopy-deep) 0%, var(--color-canopy) 55%, var(--color-primary) 100%);
+    --gradient-goldwell: radial-gradient(120% 80% at 50% 118%, rgba(230, 198, 93, 0.55) 0%, rgba(212, 175, 55, 0.28) 22%, rgba(212, 175, 55, 0.06) 44%, transparent 62%);
 
     /* Typography */
-    --font-heading: 'Playfair Display', serif;
-    --font-body: 'Poppins', sans-serif;
+    --font-heading: 'Fraunces', Georgia, 'Times New Roman', serif;
+    --font-body: 'Poppins', system-ui, sans-serif;
+    --focus-ring: 0 0 0 3px rgba(212, 175, 55, 0.55);
 
     /* Responsive Spacing Scale (8px base) */
     --spacing-xs: clamp(0.5rem, 1vw, 0.75rem);   /* 8px - 12px */

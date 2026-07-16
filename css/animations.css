@@ -23,3 +23,52 @@
 
 .animate-fade { animation: fadeIn 1s ease forwards; }
 .animate-slide-up { animation: slideUp 0.8s ease forwards; }
+
+/* ==========================================================================
+   Hero — orchestrated load sequence + ambient golden-hour motion
+   ========================================================================== */
+@keyframes heroRise {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero__content > * {
+    opacity: 0;
+    animation: heroRise 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hero__content > *:nth-child(1) { animation-delay: 0.15s; }
+.hero__content > *:nth-child(2) { animation-delay: 0.32s; }
+.hero__content > *:nth-child(3) { animation-delay: 0.49s; }
+.hero__content > *:nth-child(4) { animation-delay: 0.66s; }
+
+/* Ambient light-well drift (subtle, slow) */
+@keyframes heroGlow {
+    0%   { opacity: 0.75; transform: translateY(0) scale(1); }
+    100% { opacity: 1;    transform: translateY(-2%) scale(1.06); }
+}
+
+/* Scroll cue bob */
+@keyframes heroCue {
+    0%, 100% { transform: translate(-50%, 0); opacity: 0.55; }
+    50%      { transform: translate(-50%, 8px); opacity: 0.9; }
+}
+
+/* ==========================================================================
+   Respect users who prefer reduced motion
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .reveal { opacity: 1 !important; transform: none !important; }
+    .hero__content > * { opacity: 1 !important; }
+    .hero::before { animation: none !important; }
+    .hero__cue { display: none; }
+}

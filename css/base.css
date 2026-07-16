@@ -7,14 +7,63 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
-    font-weight: 700;
-    line-height: 1.2;
+    font-weight: 600;
+    font-optical-sizing: auto;
+    line-height: 1.12;
+    letter-spacing: -0.015em;
     color: var(--color-primary);
 }
 
-h1 { font-size: clamp(2.25rem, 6vw, 4.5rem); }
-h2 { font-size: clamp(1.75rem, 4vw, 3rem); }
-h3 { font-size: clamp(1.25rem, 3vw, 2rem); }
+h1 { font-size: clamp(2.4rem, 6.2vw, 4.75rem); font-weight: 600; }
+h2 { font-size: clamp(1.9rem, 4vw, 3.1rem); }
+h3 { font-size: clamp(1.25rem, 3vw, 1.9rem); }
+
+/* Eyebrow / kicker — the utility face, formalized */
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6em;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--color-gold-ink);
+    margin-bottom: var(--spacing-sm);
+}
+
+.eyebrow::before {
+    content: '';
+    width: 1.75rem;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.7;
+}
+
+.eyebrow--center { justify-content: center; }
+.eyebrow--light { color: var(--color-gold-light); }
+
+/* Seed divider — the one repeated flourish */
+.leaf-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+    color: var(--color-gold);
+    margin: var(--spacing-sm) auto 0;
+    font-size: 0.95rem;
+}
+
+.leaf-divider::before,
+.leaf-divider::after {
+    content: '';
+    width: clamp(2rem, 8vw, 4rem);
+    height: 1px;
+    background: linear-gradient(90deg, transparent, currentColor);
+    opacity: 0.6;
+}
+
+.leaf-divider::after { transform: scaleX(-1); }
 
 .container {
     max-width: var(--container-max-width);
@@ -32,11 +81,18 @@ h3 { font-size: clamp(1.25rem, 3vw, 2rem); }
 }
 
 .text-center { text-align: center; }
-.text-gold { color: var(--color-gold); }
+.text-gold { color: var(--color-gold-ink); }
 .text-primary { color: var(--color-primary); }
+.text-white { color: var(--color-white); }
 
 .bg-secondary { background-color: var(--color-bg-secondary); }
 .bg-primary { background-color: var(--color-primary); color: var(--color-white); }
+
+.no-padding { padding: 0 !important; }
+
+/* Headings inside dark bands read as ivory, not brand green */
+.bg-primary h1, .bg-primary h2, .bg-primary h3,
+.page-header h1, .page-header h2, .page-header h3 { color: var(--color-white); }
 
 /* Screen Reader Only */
 .sr-only {

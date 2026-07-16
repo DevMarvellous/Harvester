@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with The Harvester for any enquiries, prayer requests, or information.">
+    <meta name="description" content="Send The Harvester a message. Fill in our enquiries form for general questions, prayer requests, or to plan a visit.">
     <title>Enquiries | The Harvester</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/variables.css">
@@ -33,8 +33,9 @@
                 <ul class="nav__list" id="nav-list">
                     <li><a href="index.html" class="nav__link">Home</a></li>
                     <li><a href="about.html" class="nav__link">About Us</a></li>
-                    <li><a href="enquiries.html" class="nav__link nav__link--active">Enquiries</a></li>
+                    <li><a href="strategy.html" class="nav__link">Ministry Model</a></li>
                     <li><a href="contact.html" class="nav__link">Contact</a></li>
+                    <li><a href="enquiries.html" class="nav__link nav__link--active">Enquiries</a></li>
                 </ul>
                 
                 <button class="nav__toggle" id="nav-toggle" aria-label="Toggle Menu" aria-expanded="false">
@@ -45,58 +46,55 @@
     </header>
 
     <main>
-        <!-- Page Header -->
-        <section class="section bg-primary text-center">
-            <div class="container">
-                <h1 class="text-white animate-fade">Enquiries</h1>
-                <p class="text-white animate-fade" style="opacity: 0.8;">How can we help you today?</p>
-            </div>
-        </section>
-
-        <!-- Enquiry Form Section -->
         <section class="section">
             <div class="container">
-                <div class="form-container reveal">
-                    <form id="enquiry-form" class="form">
-                        <div class="form__group">
-                            <label for="name" class="form__label">Full Name</label>
-                            <input type="text" id="name" name="name" class="form__input" placeholder="Your full name" required>
-                            <span class="form__error" id="name-error"></span>
-                        </div>
+                <div class="reveal" style="max-width: 720px; margin: 0 auto;">
+                    <div style="text-align: center; margin-bottom: var(--spacing-lg);">
+                        <span class="eyebrow eyebrow--center">We'd love to hear from you</span>
+                        <h1 class="section__title" style="font-size: clamp(2rem, 5vw, 3rem);">Send Us a Message</h1>
+                        <p class="section__subtitle" style="margin: 0 auto;">Have a question, a prayer request, or want to plan your first visit? Fill in the form below and we'll get back to you.</p>
+                    </div>
 
-                        <div class="grid grid--2-col">
+                    <div class="card">
+                        <!-- Replace YOUR_FORM_ID with your real Formspree endpoint -->
+                        <form id="enquiry-form" class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                             <div class="form__group">
-                                <label for="email" class="form__label">Email Address</label>
-                                <input type="email" id="email" name="email" class="form__input" placeholder="your.email@example.com" required>
-                                <span class="form__error" id="email-error"></span>
+                                <label for="name" class="form__label">Full Name</label>
+                                <input type="text" id="name" name="name" class="form__input" placeholder="Your full name" required>
                             </div>
+
+                            <div class="grid grid--2-col">
+                                <div class="form__group">
+                                    <label for="email" class="form__label">Email Address</label>
+                                    <input type="email" id="email" name="email" class="form__input" placeholder="your.email@example.com" required>
+                                    <span class="form__error" id="email-error"></span>
+                                </div>
+                                <div class="form__group">
+                                    <label for="phone" class="form__label">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="form__input" placeholder="Your phone number">
+                                </div>
+                            </div>
+
                             <div class="form__group">
-                                <label for="phone" class="form__label">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" class="form__input" placeholder="Your phone number">
+                                <label for="subject" class="form__label">Subject</label>
+                                <select id="subject" name="subject" class="form__input" required>
+                                    <option value="" disabled selected>Select a subject</option>
+                                    <option value="general">General Enquiry</option>
+                                    <option value="prayer">Prayer Request</option>
+                                    <option value="visit">Planning a Visit</option>
+                                    <option value="other">Other</option>
+                                </select>
                             </div>
-                        </div>
 
-                        <div class="form__group">
-                            <label for="subject" class="form__label">Subject</label>
-                            <select id="subject" name="subject" class="form__input" required>
-                                <option value="" disabled selected>Select a subject</option>
-                                <option value="general">General Enquiry</option>
-                                <option value="prayer">Prayer Request</option>
-                                <option value="visit">Planning a Visit</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
+                            <div class="form__group">
+                                <label for="message" class="form__label">Message</label>
+                                <textarea id="message" name="message" class="form__input" rows="6" placeholder="How can we help?" required></textarea>
+                            </div>
 
-                        <div class="form__group">
-                            <label for="message" class="form__label">Your Message</label>
-                            <textarea id="message" name="message" class="form__input" rows="6" placeholder="How can we assist you?" required></textarea>
-                            <span class="form__error" id="message-error"></span>
-                        </div>
-
-                        <button type="submit" class="btn btn--primary btn--full">Send Enquiry</button>
-                        
-                        <div id="form-message" class="form__message"></div>
-                    </form>
+                            <button type="submit" class="btn btn--primary btn--full">Send Message &nbsp;<i class="fas fa-paper-plane"></i></button>
+                            <div id="form-message" class="form__message"></div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -108,12 +106,19 @@
                 <div class="footer__col">
                     <h3 class="footer__title nav__logo">THE HARVESTER</h3>
                     <p>A place where faith grows, lives are transformed, and Christ is glorified.</p>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/The%20Harvester" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/theharvesterministry3" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/theharvesterminisry5309" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
                 <div class="footer__col">
                     <h4 class="footer__title">Quick Links</h4>
                     <ul class="footer__links">
                         <li><a href="about.html" class="footer__link">Our Story</a></li>
+                        <li><a href="strategy.html" class="footer__link">Ministry Model</a></li>
                         <li><a href="contact.html" class="footer__link">Visit Us</a></li>
+                        <li><a href="enquiries.html" class="footer__link">Enquiries</a></li>
                     </ul>
                 </div>
                 <div class="footer__col">
@@ -129,13 +134,7 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="js/main.js"></script>
     <script src="js/forms.js"></script>
 </body>
 </html>
-
-
-
-
-
