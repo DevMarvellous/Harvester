@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bibleBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#042A17"/>
+      <stop offset="60%" stop-color="#063D22"/>
+      <stop offset="100%" stop-color="#0B6B3A"/>
+    </linearGradient>
+
+    <linearGradient id="goldSheen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF4D0"/>
+      <stop offset="40%" stop-color="#E6C65D"/>
+      <stop offset="100%" stop-color="#A68A2B"/>
+    </linearGradient>
+
+    <linearGradient id="pageGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EDE7DA"/>
+      <stop offset="50%" stop-color="#FAF7F0"/>
+      <stop offset="100%" stop-color="#EDE7DA"/>
+    </linearGradient>
+
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+
+    <radialGradient id="storyGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#E6C65D" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#063D22" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="600" height="750" rx="20" fill="url(#bibleBg)"/>
+  <circle cx="300" cy="320" r="260" fill="url(#storyGlow)"/>
+
+  <!-- Decorative Botanical Border -->
+  <rect x="25" y="25" width="550" height="700" rx="14" fill="none" stroke="rgba(212,175,55,0.3)" stroke-width="1.5"/>
+  <rect x="35" y="35" width="530" height="680" rx="10" fill="none" stroke="rgba(212,175,55,0.15)" stroke-width="1" stroke-dasharray="4 6"/>
+
+  <!-- Main Illustration Group -->
+  <g filter="url(#cardShadow)" transform="translate(0, 40)">
+    
+    <!-- Radiant Halo / Wheat Harvest Behind Bible -->
+    <!-- Stalks of Wheat Left -->
+    <g stroke="url(#goldSheen)" stroke-width="2.5" fill="none" opacity="0.85">
+      <path d="M220 280 Q 170 200 130 140"/>
+      <ellipse cx="130" cy="140" rx="8" ry="16" transform="rotate(-30 130 140)" fill="#E6C65D"/>
+      <ellipse cx="145" cy="165" rx="7" ry="14" transform="rotate(-25 145 165)" fill="#E6C65D"/>
+      <ellipse cx="165" cy="195" rx="7" ry="14" transform="rotate(-20 165 195)" fill="#E6C65D"/>
+      <ellipse cx="185" cy="230" rx="6" ry="12" transform="rotate(-15 185 230)" fill="#E6C65D"/>
+
+      <!-- Stalks of Wheat Right -->
+      <path d="M380 280 Q 430 200 470 140"/>
+      <ellipse cx="470" cy="140" rx="8" ry="16" transform="rotate(30 470 140)" fill="#E6C65D"/>
+      <ellipse cx="455" cy="165" rx="7" ry="14" transform="rotate(25 455 165)" fill="#E6C65D"/>
+      <ellipse cx="435" cy="195" rx="7" ry="14" transform="rotate(20 435 195)" fill="#E6C65D"/>
+      <ellipse cx="415" cy="230" rx="6" ry="12" transform="rotate(15 415 230)" fill="#E6C65D"/>
+    </g>
+
+    <!-- Open Holy Bible -->
+    <!-- Bible Base Shadow & Cover -->
+    <path d="M120 380 Q 300 420 480 380 L 490 410 Q 300 450 110 410 Z" fill="#50350A"/>
+    <path d="M110 375 Q 300 410 490 375 L 485 390 Q 300 425 115 390 Z" fill="#A68A2B"/>
+
+    <!-- Left Book Page -->
+    <path d="M130 365 Q 210 320 295 330 L 295 400 Q 210 390 130 435 Z" fill="url(#pageGrad)" stroke="#D5CEBE" stroke-width="1"/>
+    <!-- Right Book Page -->
+    <path d="M470 365 Q 390 320 305 330 L 305 400 Q 390 390 470 435 Z" fill="url(#pageGrad)" stroke="#D5CEBE" stroke-width="1"/>
+
+    <!-- Bookmark Ribbon -->
+    <path d="M300 330 Q 295 380 320 440 L 310 448 L 300 436 L 290 448 L 285 440 Q 295 380 300 330" fill="#B32424"/>
+
+    <!-- Faint Scripture Lines on Pages -->
+    <g stroke="#9E9689" stroke-width="1.5" opacity="0.6">
+      <!-- Left Page Lines -->
+      <line x1="160" y1="365" x2="270" y2="350"/>
+      <line x1="160" y1="380" x2="270" y2="365"/>
+      <line x1="160" y1="395" x2="270" y2="380"/>
+      <line x1="160" y1="410" x2="240" y2="397"/>
+      <!-- Right Page Lines -->
+      <line x1="330" y1="350" x2="440" y2="365"/>
+      <line x1="330" y1="365" x2="440" y2="380"/>
+      <line x1="330" y1="380" x2="440" y2="395"/>
+      <line x1="360" y1="397" x2="440" y2="410"/>
+    </g>
+
+    <!-- Cross & Light Above Bible -->
+    <g transform="translate(300, 210)">
+      <circle cx="0" cy="0" r="34" fill="url(#goldSheen)"/>
+      <path d="M0 -20 V 20 M-14 -7 H 14" stroke="#042A17" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Typography Plaque at Bottom -->
+  <g transform="translate(300, 560)">
+    <rect x="-180" y="0" width="360" height="95" rx="16" fill="rgba(255,255,255,0.08)" stroke="rgba(212,175,55,0.4)" stroke-width="1"/>
+    <text x="0" y="34" font-family="'Fraunces', serif" font-size="20" font-weight="600" fill="#FFF4D0" text-anchor="middle">Faith &bull; Purpose &bull; Destiny</text>
+    <text x="0" y="58" font-family="'Poppins', sans-serif" font-size="12" fill="#E6C65D" text-anchor="middle">ESTABLISHED IN 2010 &bull; RAINHAM</text>
+    <text x="0" y="78" font-family="'Poppins', sans-serif" font-size="11" fill="rgba(255,255,255,0.7)" text-anchor="middle">&ldquo;Raising a generation of true worshippers&rdquo;</text>
+  </g>
+</svg>

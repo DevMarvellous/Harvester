@@ -49,77 +49,118 @@
     </header>
 
     <main>
+    <main>
         <!-- Contact Information Section -->
         <section class="section">
             <div class="container">
-                <div class="contact-info reveal" style="max-width: 680px; margin: 0 auto; text-align: center;">
+                <div class="section__header text-center reveal">
                     <span class="eyebrow eyebrow--center">Reach the team</span>
-                    <h2 class="section__title">Get In Touch</h2>
-                    <p style="margin-bottom: var(--spacing-lg);">Whether you have a question about our services, need prayer, or want to learn more about our community, we're just a message away.</p>
+                    <h1 class="section__title">Get In Touch</h1>
+                    <p class="section__subtitle">Whether you have a question about our services, need prayer, or want to learn more about our community, we're just a message away.</p>
+                    <div class="leaf-divider"><i class="fas fa-seedling"></i></div>
+                </div>
 
-                    <div class="contact-details" style="text-align: left; margin-bottom: var(--spacing-lg);">
-                        <div class="contact-detail" style="margin-bottom: 1.5rem;">
-                            <i class="fas fa-location-dot" style="font-size: 1.5rem;"></i>
-                            <div>
-                                <h3 style="font-size: 1.1rem;">Our Address</h3>
-                                <p>Mainly Hall, Harris Academy, Rainham, London, RM13 9UU, United Kingdom</p>
-                            </div>
+                <!-- Contact Cards Grid -->
+                <div class="contact-cards-grid reveal">
+                    <!-- Card 1: Address -->
+                    <div class="contact-card-item">
+                        <div class="contact-card-item__icon">
+                            <i class="fas fa-location-dot"></i>
                         </div>
-                        <div class="contact-detail" style="margin-bottom: 1.5rem;">
-                            <i class="fas fa-phone" style="font-size: 1.5rem;"></i>
-                            <div>
-                                <h3 style="font-size: 1.1rem;">Phone</h3>
-                                <p>+44 7722 523856</p>
-                            </div>
-                        </div>
-                        <div class="contact-detail" style="margin-bottom: 1.5rem;">
-                            <i class="fas fa-envelope" style="font-size: 1.5rem;"></i>
-                            <div>
-                                <h3 style="font-size: 1.1rem;">Email</h3>
-                                <p>info@theharvesterchurch.org</p>
-                            </div>
-                        </div>
-                        <div class="contact-detail" style="margin-bottom: 1.5rem;">
-                            <i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i>
-                            <div>
-                                <h3 style="font-size: 1.1rem;">Facebook</h3>
-                                <p><a href="https://www.facebook.com/The%20Harvester" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary);">facebook.com/The Harvester</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-detail" style="margin-bottom: 1.5rem;">
-                            <i class="fab fa-instagram" style="font-size: 1.5rem;"></i>
-                            <div>
-                                <h3 style="font-size: 1.1rem;">Instagram</h3>
-                                <p><a href="https://www.instagram.com/theharvesterministry3" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary);">@theharvesterministry3</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-detail">
-                            <i class="fab fa-youtube" style="font-size: 1.5rem;"></i>
-                            <div>
-                                <h3 style="font-size: 1.1rem;">YouTube</h3>
-                                <p><a href="https://www.youtube.com/theharvesterminisry5309" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary);">youtube.com/theharvesterminisry5309</a></p>
-                            </div>
-                        </div>
+                        <h3>Our Address</h3>
+                        <p>Mainly Hall, Harris Academy<br>Rainham, London, RM13 9UU<br>United Kingdom</p>
                     </div>
 
-                    <!-- Action Buttons -->
-                    <div class="contact-actions" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <!-- Card 2: Phone / WhatsApp -->
+                    <div class="contact-card-item">
+                        <div class="contact-card-item__icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone & WhatsApp</h3>
+                        <p>+44 7722 523856</p>
+                        <p style="margin-top: 0.5rem;"><a href="https://wa.me/447722523856" target="_blank" rel="noopener noreferrer" class="text-gold" style="font-weight: 600;">Chat on WhatsApp &rarr;</a></p>
+                    </div>
+
+                    <!-- Card 3: Email -->
+                    <div class="contact-card-item">
+                        <div class="contact-card-item__icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>info@theharvesterchurch.org</p>
+                        <p style="margin-top: 0.5rem;"><a href="mailto:info@theharvesterchurch.org" class="text-gold" style="font-weight: 600;">Send Direct Email &rarr;</a></p>
+                    </div>
+
+                    <!-- Card 4: Online Community -->
+                    <div class="contact-card-item">
+                        <div class="contact-card-item__icon">
+                            <i class="fas fa-share-nodes"></i>
+                        </div>
+                        <h3>Social Media</h3>
+                        <p>Follow us for weekly sermon updates and live services.</p>
+                        <div class="footer__social" style="justify-content: center; margin-top: 0.75rem;">
+                            <a href="https://www.facebook.com/The%20Harvester" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/theharvesterministry3" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/theharvesterminisry5309" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons & Enquiry Prompt -->
+                <div class="card text-center reveal" style="margin-top: var(--spacing-lg); background: var(--color-bg-secondary);">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-primary); margin-bottom: 0.5rem;">Have a Specific Enquiry or Prayer Request?</h3>
+                    <p style="max-width: 600px; margin: 0 auto 1.5rem; color: var(--color-text-light);">Use our direct contact channels or fill in our dedicated enquiry form and our pastoral team will reach back to you.</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                         <a href="https://wa.me/447722523856" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp" id="whatsapp-btn">
                             <i class="fab fa-whatsapp"></i> Message on WhatsApp
                         </a>
-                        <a href="mailto:info@theharvesterchurch.org" class="btn btn--email" id="email-btn">
-                            <i class="fas fa-envelope"></i> Send an Email
+                        <a href="enquiries.html" class="btn btn--gold">
+                            <i class="fas fa-pen-to-square"></i> Fill Online Enquiry
                         </a>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Map Section -->
-        <section class="section no-padding reveal">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1861.8673271324653!2d0.2028534590269072!3d51.5151827221075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ba98c9f3a287%3A0x3d421a7fc60b08fe!2sHarris%20Academy%20Rainham!5e0!3m2!1sen!2sng!4v1780613430204!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
     </main>
+
+    <footer class="footer bg-secondary">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <h3 class="footer__title nav__logo">THE HARVESTER</h3>
+                    <p>... raising a generation of true worshippers.</p>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/The%20Harvester" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/theharvesterministry3" target="_blank"
+                            rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/theharvesterminisry5309" target="_blank"
+                            rel="noopener noreferrer" class="social-link" aria-label="YouTube"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="about.html" class="footer__link">Our Story</a></li>
+                        <li><a href="strategy.html" class="footer__link">Ministry Model</a></li>
+                        <li><a href="contact.html" class="footer__link">Visit Us</a></li>
+                        <li><a href="enquiries.html" class="footer__link">Enquiries</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Contact Us</h4>
+                    <p><i class="fas fa-location-dot"></i> Mainly Hall, Harris Academy, Rainham, London, RM13 9UU, United Kingdom</p>
+                    <p><i class="fas fa-phone"></i> +44 7722 523856</p>
+                    <p><i class="fas fa-envelope"></i> info@theharvesterchurch.org</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 The Harvester. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>

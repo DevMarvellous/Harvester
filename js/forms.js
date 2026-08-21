@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const contactForm = document.getElementById('contact-form');
+    const forms = document.querySelectorAll('form.form, #contact-form, #enquiry-form');
 
     const handleFormSubmit = (form) => {
         if (!form) return;
@@ -9,14 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Basic validation
             let isValid = true;
-            const formMessage = form.querySelector('.form__message') || document.getElementById('form-message');
+            const formMessage = form.querySelector('.form__message') || form.querySelector('#form-message');
 
             // Simple email validation regex
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             const emailInput = form.querySelector('input[type="email"]');
-            const emailError = form.querySelector('#email-error');
+            const emailError = form.querySelector('.form__error') || form.querySelector('#email-error');
 
-            if (emailInput && !emailRegex.test(emailInput.value)) {
+            if (emailInput && !emailRegex.test(emailInput.value.trim())) {
                 isValid = false;
                 if (emailError) emailError.textContent = 'Please enter a valid email address.';
                 emailInput.style.borderColor = '#d32f2f';
@@ -28,10 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isValid) return;
 
             const submitBtn = form.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
+            const originalHTML = submitBtn.innerHTML;
 
             submitBtn.disabled = true;
-            submitBtn.textContent = 'Sending...';
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
             fetch(form.action, {
                 method: 'POST',
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 .then((response) => {
                     if (!response.ok) throw new Error('Submission failed');
 
-                    submitBtn.textContent = 'Sent Successfully!';
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Sent Successfully!';
                     submitBtn.style.backgroundColor = '#2e7d32';
 
                     if (formMessage) {
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     form.reset();
                 })
                 .catch(() => {
-                    submitBtn.textContent = originalText;
+                    submitBtn.innerHTML = originalHTML;
 
                     if (formMessage) {
                         formMessage.textContent = "Sorry, something went wrong. Please try again or email us directly at info@theharvesterchurch.org.";
@@ -67,13 +67,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     submitBtn.disabled = false;
 
                     setTimeout(() => {
-                        submitBtn.textContent = originalText;
+                        submitBtn.innerHTML = originalHTML;
                         submitBtn.style.backgroundColor = '';
                         if (formMessage) formMessage.style.display = 'none';
-                    }, 5000);
+                    }, 6000);
                 });
         });
     };
 
-    handleFormSubmit(contactForm);
+    forms.forEach(form => handleFormSubmit(form));
 });

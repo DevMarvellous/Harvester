@@ -56,6 +56,7 @@
     <main>
         <!-- Hero Section -->
         <section class="hero">
+            <img src="assets/images/worship-illustration.svg" alt="Worship atmosphere backdrop" class="hero__backdrop" aria-hidden="true">
             <div class="container hero__container">
                 <div class="hero__content">
                     <h1 class="hero__title">Welcome to <span class="text-gold">The Harvester</span></h1>
@@ -105,6 +106,32 @@
             </div>
         </section>
 
+        <!-- Community Spotlight Section -->
+        <section class="section bg-secondary community-spotlight">
+            <div class="container">
+                <div class="grid grid--2-col align-center" style="gap: var(--spacing-lg);">
+                    <div class="reveal">
+                        <div class="media-frame media-frame--landscape">
+                            <img src="assets/images/community-illustration.svg" alt="The Harvester Community Fellowship">
+                        </div>
+                    </div>
+                    <div class="reveal">
+                        <span class="eyebrow">Community & Fellowship</span>
+                        <h2 class="section__title">A Place You Can Call Home</h2>
+                        <p style="color: var(--color-text-light); margin-bottom: 1rem; line-height: 1.7;">
+                            At The Harvester, we believe that church is more than just a Sunday morning gathering &mdash; it is a supportive family where everyone is embraced, empowered, and equipped to fulfil their God-given destiny.
+                        </p>
+                        <ul class="strategy-list" style="margin-bottom: 1.5rem;">
+                            <li><strong>Warm Multicultural Welcome:</strong> People from all walks of life united in Christ.</li>
+                            <li><strong>Engaging Word & Worship:</strong> Practical biblical teaching that impacts daily living.</li>
+                            <li><strong>Growing Small Groups:</strong> Connecting deeply in prayer and authentic friendship.</li>
+                        </ul>
+                        <a href="about.html" class="btn btn--outline">Learn More About Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Scripture Band -->
         <section class="section scripture">
             <div class="container">
@@ -148,13 +175,13 @@
             </div>
         </section>
 
-        <!-- Contact Preview -->
+        <!-- Visit Us Preview (No interactive map) -->
         <section class="section contact-preview">
             <div class="container contact-preview__container">
                 <div class="contact-preview__info reveal">
                     <span class="eyebrow">Find your way here</span>
                     <h2 class="section__title">Visit Us</h2>
-                    <p>We're located in the heart of Rainham and would love to meet you in person.</p>
+                    <p>We're located in the heart of Rainham and would love to meet you in person this Sunday.</p>
 
                     <div class="contact-preview__details">
                         <div class="contact-detail">
@@ -171,15 +198,50 @@
                                 <p>+44 7722 523856</p>
                             </div>
                         </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>info@theharvesterchurch.org</p>
+                            </div>
+                        </div>
                     </div>
-                    <a href="contact.html" class="btn btn--gold">Get Directions</a>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="contact.html" class="btn btn--gold">Contact Information</a>
+                        <a href="enquiries.html" class="btn btn--outline">Send Enquiry</a>
+                    </div>
                 </div>
 
-                <div class="contact-preview__map reveal">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1861.8673271324653!2d0.2028534590269072!3d51.5151827221075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ba98c9f3a287%3A0x3d421a7fc60b08fe!2sHarris%20Academy%20Rainham!5e0!3m2!1sen!2sng!4v1780613430204!5m2!1sen!2sng"
-                        width="100%" height="350" style="border:0; border-radius: 8px;" allowfullscreen=""
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="reveal">
+                    <div class="visit-info-card">
+                        <div class="visit-info-card__header">
+                            <span class="visit-info-card__badge"><i class="fas fa-sparkles"></i> First Time Visiting?</span>
+                            <h3 style="color: var(--color-white); font-size: 1.4rem; margin-top: 0.25rem;">What to Expect</h3>
+                        </div>
+                        <ul class="visit-feature-list">
+                            <li class="visit-feature-item">
+                                <i class="fas fa-car"></i>
+                                <div>
+                                    <strong>Free On-Site Parking</strong>
+                                    <span>Ample parking available within Harris Academy grounds for all visitors.</span>
+                                </div>
+                            </li>
+                            <li class="visit-feature-item">
+                                <i class="fas fa-children"></i>
+                                <div>
+                                    <strong>Family & Children Friendly</strong>
+                                    <span>Engaging Sunday school and children's church activities during service.</span>
+                                </div>
+                            </li>
+                            <li class="visit-feature-item">
+                                <i class="fas fa-mug-hot"></i>
+                                <div>
+                                    <strong>Refreshments & Welcome Team</strong>
+                                    <span>Join us for warm refreshments and fellowship immediately after service.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

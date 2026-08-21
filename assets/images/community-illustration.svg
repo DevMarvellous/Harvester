@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="commBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F2E7"/>
+      <stop offset="60%" stop-color="#EFEADD"/>
+      <stop offset="100%" stop-color="#E5DCBF"/>
+    </linearGradient>
+
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E6C65D"/>
+      <stop offset="100%" stop-color="#D4AF37"/>
+    </linearGradient>
+
+    <linearGradient id="greenPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#128A4C"/>
+      <stop offset="100%" stop-color="#0B6B3A"/>
+    </linearGradient>
+
+    <linearGradient id="canopyDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B6B3A"/>
+      <stop offset="100%" stop-color="#063D22"/>
+    </linearGradient>
+
+    <filter id="softCardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#063D22" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="600" rx="16" fill="url(#commBg)"/>
+
+  <!-- Decorative Botanical Shapes / Wheat Background -->
+  <g opacity="0.15" stroke="#0B6B3A" stroke-width="2" fill="none">
+    <circle cx="400" cy="300" r="220"/>
+    <circle cx="400" cy="300" r="180" stroke-dasharray="6 8"/>
+    <path d="M150 500 Q 250 200 400 100 Q 550 200 650 500"/>
+  </g>
+
+  <!-- Central Fellowship Composition -->
+  <g filter="url(#softCardShadow)">
+    <!-- Central Connection Card / Platform -->
+    <rect x="180" y="140" width="440" height="340" rx="24" fill="#FFFFFF" stroke="rgba(212,175,55,0.3)" stroke-width="2"/>
+    
+    <!-- Heart & Cross Header Icon -->
+    <circle cx="400" cy="200" r="42" fill="url(#greenPrimary)"/>
+    <path d="M400 178 V 222 M383 192 H 417" stroke="#FFF4D0" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Community Title & Subtitle -->
+    <text x="400" y="270" font-family="'Fraunces', serif" font-size="24" font-weight="600" fill="#063D22" text-anchor="middle">One Family in Christ</text>
+    <text x="400" y="300" font-family="'Poppins', sans-serif" font-size="14" fill="#5A5F55" text-anchor="middle">Welcoming, caring, and growing together</text>
+
+    <!-- 3 Community Badges -->
+    <!-- Badge 1: Fellowship -->
+    <g transform="translate(210, 335)">
+      <rect width="115" height="105" rx="14" fill="#F7F2E7" stroke="rgba(11,107,58,0.1)"/>
+      <circle cx="57" cy="40" r="20" fill="rgba(11,107,58,0.1)"/>
+      <path d="M50 48 Q 57 32 64 48 M57 32 A 4 4 0 1 1 57 31.9" stroke="#0B6B3A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <text x="57" y="78" font-family="'Poppins', sans-serif" font-size="12" font-weight="600" fill="#063D22" text-anchor="middle">Fellowship</text>
+      <text x="57" y="93" font-family="'Poppins', sans-serif" font-size="10" fill="#5A5F55" text-anchor="middle">Small Groups</text>
+    </g>
+
+    <!-- Badge 2: Discipleship -->
+    <g transform="translate(342, 335)">
+      <rect width="115" height="105" rx="14" fill="#F7F2E7" stroke="rgba(212,175,55,0.3)"/>
+      <circle cx="57" cy="40" r="20" fill="rgba(212,175,55,0.2)"/>
+      <path d="M47 43 L 57 28 L 67 43 Z M57 43 V 52" stroke="#8A6D1F" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+      <text x="57" y="78" font-family="'Poppins', sans-serif" font-size="12" font-weight="600" fill="#063D22" text-anchor="middle">Discipleship</text>
+      <text x="57" y="93" font-family="'Poppins', sans-serif" font-size="10" fill="#5A5F55" text-anchor="middle">Spiritual Growth</text>
+    </g>
+
+    <!-- Badge 3: Outreach -->
+    <g transform="translate(475, 335)">
+      <rect width="115" height="105" rx="14" fill="#F7F2E7" stroke="rgba(11,107,58,0.1)"/>
+      <circle cx="57" cy="40" r="20" fill="rgba(11,107,58,0.1)"/>
+      <path d="M45 42 Q 57 28 69 42 M57 32 V 48" stroke="#0B6B3A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <text x="57" y="78" font-family="'Poppins', sans-serif" font-size="12" font-weight="600" fill="#063D22" text-anchor="middle">Outreach</text>
+      <text x="57" y="93" font-family="'Poppins', sans-serif" font-size="10" fill="#5A5F55" text-anchor="middle">Impacting Lives</text>
+    </g>
+  </g>
+
+  <!-- Golden Floating Leaves Decor -->
+  <g fill="url(#goldAccent)">
+    <path d="M120 120 C 135 105, 160 115, 150 140 C 135 145, 110 135, 120 120 Z" opacity="0.6"/>
+    <path d="M680 480 C 695 465, 720 475, 710 500 C 695 505, 670 495, 680 480 Z" opacity="0.6"/>
+    <circle cx="150" cy="460" r="6" fill="#D4AF37" opacity="0.4"/>
+    <circle cx="670" cy="160" r="8" fill="#0B6B3A" opacity="0.25"/>
+  </g>
+</svg>
