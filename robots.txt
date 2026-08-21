@@ -1,0 +1,6 @@
+# Robots.txt for The Harvester Church
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://theharvesterchurch.org/sitemap.xml

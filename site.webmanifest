@@ -1,0 +1,16 @@
+{
+  "name": "The Harvester Church",
+  "short_name": "The Harvester",
+  "description": "Raising a generation of true worshippers in Rainham, London.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#063D22",
+  "theme_color": "#063D22",
+  "icons": [
+    {
+      "src": "assets/images/logo.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png"
+    }
+  ]
+}
